@@ -1,0 +1,655 @@
+
+.chat {
+	border-radius: 10px;
+	border:1px solid #333;
+	margin-left: auto;
+	width:40%;
+	height:70%;
+	background:#555;
+	color:#fff;
+}
+
+.link_q
+{
+	color: black;
+}
+
+.history_chat
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  margin-top: 93px;
+  right: 20px;
+  background: #555555;
+  text-decoration: none;
+}
+
+.clean_history_chat
+{
+  text-align: center;
+  margin-top: 75px;
+}
+
+.history_table
+{
+    margin: 0 auto;
+    margin-top: 59px;
+    border-spacing: 0;
+}
+
+#table_hist
+{
+  overflow-y: auto;
+  height: 750px;
+  width: 100%;
+}
+
+.bold
+{
+  font-weight:bold;
+}
+
+.colum_hist {
+border: 1px solid black;
+padding: 19px;
+}
+
+.but_q
+{
+    box-shadow: 8px 10px 17px black;
+    position: fixed;
+    right: 5px;
+    margin-top: 89px;
+    border-radius: 10px;
+    width: 100px;
+    background: #333333;
+    height: 45px;
+    z-index: 10;
+}
+
+.zadat_v
+{
+  font-weight: bold;
+  color: #2fde23;
+}
+
+.znak_q
+{
+	margin-top: 2px;
+    margin-left: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+}
+
+.znak_quection
+{
+font-weight: bold;
+    font-size: 25px;
+    margin-left: 14px;
+    position: absolute;
+    margin-top: 6px;
+    text-align: center;
+}
+
+@media (min-width: 415px) and (max-width: 1024px)
+{
+  .chat 
+  {
+  border-radius: 10px;
+  border:1px solid #333;
+  margin-left: auto;
+  width:50%;
+  height:70%;
+  background:#555;
+  color:#fff;
+  margin-right: 50px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 414px)
+{
+  .chat 
+  {
+  border-radius: 10px;
+  border:1px solid #333;
+  margin-left: auto;
+  width:100%;
+  height:70%;
+  background:#555;
+  color:#fff;
+  };
+}
+
+@media (min-width: 0px) and (max-width: 414px)
+{
+  .chat-form__input {
+	width:100% !important;
+}
+}
+
+@media (min-width: 0px) and (max-width: 699px)
+{
+  .but_q
+{
+    box-shadow: 8px 10px 17px black;
+    position: fixed;
+    left: 3%;
+    margin-top: 89px;
+    border-radius: 10px;
+    width: 100px;
+    background: #333333;
+    height: 45px;
+    z-index: 10;
+}
+}
+
+@media (min-width: 700px) and (max-width: 799px)
+{
+  .but_q
+{
+   box-shadow: 8px 10px 17px black;
+    position: fixed;
+    left: 39%;
+    margin-top: 89px;
+    border-radius: 10px;
+    width: 100px;
+    background: #333333;
+    height: 45px;
+    z-index: 10;
+}
+}
+
+@media (min-width: 800px) and (max-width: 1024px)
+{
+  .but_q
+{
+   box-shadow: 8px 10px 17px black;
+    position: fixed;
+    left: 50%;
+    margin-top: 89px;
+    border-radius: 10px;
+    width: 100px;
+    background: #333333;
+    height: 45px;
+    z-index: 10;
+}
+}
+
+
+
+@media (min-width: 0px) and (max-width: 414px)
+{
+  .chat-form__submit 
+  {
+  width:40% !important;
+  cursor: pointer;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1024px)
+{
+  .chat-form__submit 
+  {
+    width:30% !important;
+    cursor: pointer;
+  }
+}
+
+
+.otstup_change
+{
+	margin-left: 21px;
+}
+
+.exit {
+    border-radius: 5px;
+    text-decoration: none;
+    right: 20px;
+    position: absolute;
+    width: 108px;
+    height: 20px;
+    background: #009900;
+    margin-top: 70px;
+  }
+
+  .q
+  {
+    margin-top: 40px;
+  }
+
+  .text-exit
+  {
+    color: white;
+    padding-left:29px;
+  }
+
+.razdel
+{
+  font-size: 24px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+.zamena_imeni_i_parola_block
+{
+    margin-left: 790px;
+    background-color: rgb( 51, 51, 51 );
+    width: 749px;
+    height: 208px;
+    position: absolute;
+    top: 775px;
+}
+
+.change {
+    background: #009900;
+    width: 114px;
+    height: 59px;
+    cursor: pointer;
+  }
+
+
+.del_select
+{
+  background-color: rgb( 255, 255, 255 );
+    color: black;
+    width: 90px;
+    height: 59px
+}
+
+.back_panel_nastroek {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  text-decoration: underline;
+  text-align: left;
+  left: 484px;
+  top: 659px;
+  width: 338px;
+  height: 18px;
+  z-index: 11;
+}
+
+
+.back_to_my_site {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  text-decoration: underline;
+  text-align: left;
+  left: 485px;
+  top: 655px;
+  width: 207px;
+  height: 17px;
+  z-index: 14;
+}
+
+.block_back_site
+{
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.block_back_panel_nastroek
+{
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+#message-text
+{
+	height: 70px;
+}
+.nastroit_chat
+{
+	float: right;
+	margin-right: 10px;
+  color: green;
+}
+.zadat_vopros
+{
+	margin-left: 10px;
+}
+.massage_field
+{
+	width: 633.19px;
+	height: 220px;
+	margin: 10px 10px 10px 10px;
+  overflow-y: auto;
+}
+.chat-messages {
+	min-height:40px;
+	max-height:40px;
+	overflow:auto;
+	border-bottom: 1px solid black;
+  background: #333;
+  border-radius: 10px;
+}
+
+.chat-messages__content {
+	padding:1px;
+	cursor: pointer;
+}
+
+.chat__message {
+	border-left:3px solid #333;
+	margin-top:2px;
+	padding:2px;
+}
+
+.chat__message_black {
+	border-color:#000;
+}
+
+.chat__message_blue {
+	border-color:blue;
+}
+
+.chat__message_green {
+	border-color:green;
+}
+
+  .soobshenie {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    background: #333333;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.chat__message_red {
+	border-color:red;
+}
+
+.chat-input {
+	min-height:6%;
+}
+input {
+	font-family:arial;
+	font-size:16px;
+	vertical-align:middle;
+	background:#333;
+	color:#fff;
+	border:0;
+	display:inline-block;
+	margin:1px;
+	height:30px;
+}
+
+.chat-form__input {
+	width:79%;
+}
+
+.chat-form__submit {
+	width:18%;
+  cursor: pointer;
+}
+
+
+.header {
+  background-color: rgb( 51, 51, 51 );
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  width: 1688px;
+  height: 60px;
+}
+
+
+.footer {
+  background-color: rgb( 51, 51, 51 );
+  position: absolute;
+  left: -3px;
+  top: 990px;
+  width: 1683px;
+  height: 60px;
+  z-index: 1;
+}
+
+.copyright {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  padding-left: 43px;
+}
+
+
+.zagolovok {
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+}
+
+.proizv_text {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: rgb( 0, 0, 0 );
+  text-align: left;
+  position: absolute;
+  left: 465px;
+  top: 159px;
+  width: 702px;
+  height: 18px;
+}
+
+.block_forms
+ {
+  border-radius: 10px;
+  background-color: rgb( 51, 51, 51 );
+  position: absolute;
+  left: 449px;
+  top: 222px;
+  width: 748px;
+  height: 514px;
+}
+
+.inline
+{
+  display: inline-block;
+}
+
+.text_on_forms {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+}
+
+.text_q_a
+{
+  font-family: "Times New Roman";
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.forma_vhoda_block_pole1
+{
+  padding-left: 20px;
+  padding-top: 90px;
+}
+
+.forma_vhoda_block_pole2
+{
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.forma_vhoda_otstup_pole2
+{
+  padding-left: 45px;
+}
+
+.input_text{
+  background-color: rgb( 255, 255, 255 );
+  color: black;
+  left: 731px;
+  top: 420px;
+  width: 427px;
+  height: 59px;
+}
+
+.block_button
+{
+  padding-left: 194px;
+  padding-top: 40px;
+}
+
+#button_on_forms {
+  background: #009900;
+  left: 728px;
+  top: 533px;
+  width: 218px;
+  height: 59px;
+  cursor: pointer;
+}
+
+.block_quections {
+  border-bottom: 1px solid black;
+  left: -3px;
+  top: 60px;
+  width: 1682px;
+  height: 466px;
+  padding-top: 81px;
+  overflow-y: auto;
+}
+.block_form_create_quections {
+  left: -6px;
+  top: 526px;
+  width: 1685px;
+  height: 466px;
+}
+
+.form_create_quections {
+  position: absolute;
+  background: #333333;
+  left: 42px;
+  top: 530px;
+  margin-top: 40px;
+  width: 748px;
+  height: 414px;
+}
+
+.block_button_clean1
+{
+padding-left: 20px;
+}
+.block_button_clean2
+{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.checkbox_quection {
+  background-color: rgb( 0, 153, 0 );
+  left: 349px;
+  top: 111px;
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+}
+
+
+.otobrazhenie_voprosa_panel {
+  border-radius: 10px;
+  background-color: rgb( 51, 51, 51 );
+  left: 35px;
+  top: 181px;
+  margin-top: 5px;
+  width: auto;
+  height: 62px;
+}
+
+
+.block_clean_quections{
+    margin-left: 790px;
+    background-color: rgb( 51, 51, 51 );
+    width: 749px;
+    height: 229px;
+    position: absolute;
+    top: 570px;
+}
+
+.pole1_create
+{
+padding-left: 10px;
+padding-top: 20px;
+}
+
+.pole2_create
+{
+  padding-left: 21px;
+  padding-top: 20px;
+}
+
+.button_create_quection
+{
+  padding-left: 137px;
+  padding-top: 20px;
+}
+
+.text_form_panel_preferences {
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+  left: 155px;
+  top: 571px;
+  width: 565px;
+  height: 22px;
+  z-index: 18;
+}
+
+.button_clean_quections {
+  background-color: rgb( 210, 74, 67 );
+  left: 819px;
+  top: 612px;
+  width: 360px;
+  height: 62px;
+  cursor:pointer;
+}
+
+
+.block_text_panel_preferences
+{
+  width: 427px;
+  height: 58px;
+  padding-left: 80px;
+}
+
+
+.text_field_form_quections {
+  background-color: rgb( 255, 255, 255 );
+  color: black;
+  width: 427px;
+  height: 59px;
+}
+
+.zapisat_vopros {
+  background: #009900;
+  width: 236px;
+  height: 59px;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
