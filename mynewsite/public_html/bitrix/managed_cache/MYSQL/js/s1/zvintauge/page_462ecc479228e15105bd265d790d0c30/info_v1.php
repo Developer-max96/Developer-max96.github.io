@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/bitrix/templates/zvintauge/components/bitrix/news.list/slider_on_main/script.js" => "15772063053253",); ?>
