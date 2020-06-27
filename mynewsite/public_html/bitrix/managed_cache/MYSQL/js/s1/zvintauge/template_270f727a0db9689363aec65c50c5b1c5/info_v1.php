@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/bitrix/templates/zvintauge/components/bitrix/menu/header_menu/script.js" => "1577202046407",); ?>
