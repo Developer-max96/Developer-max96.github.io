@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/bitrix/templates/zvintauge/components/bitrix/news/news_on_main/bitrix/news.detail/.default/style.css" => "1577259344155","/bitrix/templates/zvintauge/components/bitrix/main.feedback/template1/style.css" => "1577269069251","/bitrix/components/bitrix/system.show_message/templates/.default/style.css" => "157613590551",); ?>
