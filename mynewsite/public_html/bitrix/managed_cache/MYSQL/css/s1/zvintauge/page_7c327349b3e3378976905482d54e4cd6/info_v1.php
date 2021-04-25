@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/bitrix/components/bitrix/system.show_message/templates/.default/style.css" => "157613590551","/bitrix/templates/zvintauge/components/bitrix/main.feedback/template1/style.css" => "1577269069251",); ?>
