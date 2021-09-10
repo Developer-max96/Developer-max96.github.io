@@ -6,9 +6,9 @@ if($work_time>='08:00' && $work_time<='20:00')
 {
     
 // сюда нужно вписать токен вашего telegram бота
-define('TELEGRAM_TOKEN', '1753551935:AAGIQwnbb2PGv8dc4DuL2_t49LT9_uEvmNU');
+define('TELEGRAM_TOKEN', 'your token');
 // сюда нужно вписать ваш внутренний айдишник -483969318
-define('TELEGRAM_CHATID', '-483969318');// -483969318
+define('TELEGRAM_CHATID', 'your id');// -483969318
 
 
 function sendUrl($url) {
