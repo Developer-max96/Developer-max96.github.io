@@ -96,6 +96,11 @@ footer div
     bottom:0;
     width: 100%;
 }
+.main_footer
+{
+  position: absolute;
+  bottom:0;
+}
 .form_main_container
 {
     text-align: center;
