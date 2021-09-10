@@ -49,8 +49,8 @@ while ($result = mysqli_fetch_array($query))
         $check_url = sendUrl($result['Site']);
 		if(!$check_url)
         {
-            //$tbot = file_get_contents("https://api.telegram.org/bot".TELEGRAM_TOKEN."/sendMessage?chat_id=".TELEGRAM_CHATID."&text=".urlencode("Сайт $arr_check_site[$i] недоступен!!!"));
-            echo "Сайт $result[Site] недоступен!!!";
+            $tbot = file_get_contents("https://api.telegram.org/bot".TELEGRAM_TOKEN."/sendMessage?chat_id=".TELEGRAM_CHATID."&text=".urlencode("Сайт $arr_check_site[$i] недоступен!!!"));
+            //echo "Сайт $result[Site] недоступен!!!";
         }
     }
 
