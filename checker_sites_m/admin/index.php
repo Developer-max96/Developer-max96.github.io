@@ -10,12 +10,14 @@ require($_SERVER['DOCUMENT_ROOT'].'/system_files/header.php');
 <?php
 //подключаемся к базе
 require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/connect_db.php');
+$show_err_entrance=0;
 //script for entrance begin
 $query = mysqli_query($link, "SELECT * FROM LoginPassword");
 while ($result = mysqli_fetch_array($query)) 
 	{
 		if($result['PassWord'] == md5($_SESSION['password']))
 		{
+            $show_err_entrance=1;
 ?>
 
 <div class="content_wrapper">
@@ -68,12 +70,13 @@ while ($show_projects_res = mysqli_fetch_array($show_projects))
 
 
 <?php
-//script for entrance end
+        //script for entrance end
         }
-        else
-        {
-            echo 'Неверный пароль! Вернуться на <a href="/">Главную</a>';
-        }
+  
+    }
+    if($show_err_entrance!=1)
+    {
+        echo 'Неверный пароль. <a href="/">Вернуться на Главную</a>';
     }
 ?>
 
