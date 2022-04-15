@@ -6,9 +6,9 @@ if($work_time>='08:00' && $work_time<='22:00')
 require_once('/home/.../public_html/system_files/classes.php');
 
 // сюда нужно вписать токен вашего telegram бота
-define('TELEGRAM_TOKEN', '1753551935:AAGIQwnbb2PGv8dc4DuL2_t49LT9_uEvmNU');
-// сюда нужно вписать ваш внутренний айдишник -483969318
-define('TELEGRAM_CHATID', '875921183');
+define('TELEGRAM_TOKEN', 'токен');
+// сюда нужно вписать ваш внутренний айдишник
+define('TELEGRAM_CHATID', 'айдишник');
 
 //объявляем подключение к базе
 $link=Connect_DB::connect_to_db();
