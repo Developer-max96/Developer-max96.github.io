@@ -2,9 +2,9 @@
 require_once('/home/.../public_html/system_files/classes.php');
 
 // сюда нужно вписать токен вашего telegram бота
-define('TELEGRAM_TOKEN', '1753551935:AAGIQwnbb2PGv8dc4DuL2_t49LT9_uEvmNU');
-// сюда нужно вписать ваш внутренний айдишник -483969318
-define('TELEGRAM_CHATID', '-483969318');
+define('TELEGRAM_TOKEN', 'токен');
+// сюда нужно вписать ваш внутренний айдишник
+define('TELEGRAM_CHATID', 'айдишник');
 
 
 $current_date=date("F d, Y, h:i a", time()+(7 * 24 * 60 * 60));
