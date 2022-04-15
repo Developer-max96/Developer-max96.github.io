@@ -1,5 +1,5 @@
 <?php
-require_once('/home/p/pgd0211/testallcorp.evrica.marketing/public_html/system_files/connect_db.php');
+require_once('/home/.../public_html/system_files/connect_db.php');
 
 class MetaTagsAndH1
 {
