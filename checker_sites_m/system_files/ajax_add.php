@@ -1,6 +1,7 @@
 <?php
+require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/classes.php');
 //подключаемся к базе
-require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/connect_db.php');
+$link=Connect_DB::connect_to_db();
 
 if(!empty($_GET['project_name']))
 {

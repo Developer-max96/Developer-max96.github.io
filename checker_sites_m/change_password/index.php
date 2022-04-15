@@ -8,8 +8,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/system_files/header.php');
 ?>
 
 <?php
-//подключаемся к базе
-require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/connect_db.php');
+//объявляем подключение к базе
+$link=Connect_DB::connect_to_db();
 $show_err_entrance=0;
 //script for entrance begin
 $query = mysqli_query($link, "SELECT * FROM LoginPassword");

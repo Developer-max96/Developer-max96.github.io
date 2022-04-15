@@ -8,10 +8,10 @@ require($_SERVER['DOCUMENT_ROOT'].'/system_files/header.php');
 ?>
 
 <?php
-//подключаемся к базе
-require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/connect_db.php');
-$show_err_entrance=0;
+//объявляем подключение к базе
+$link=Connect_DB::connect_to_db();
 //script for entrance begin
+$show_err_entrance=0;
 $query = mysqli_query($link, "SELECT * FROM LoginPassword");
 while ($result = mysqli_fetch_array($query)) 
 	{
@@ -35,11 +35,21 @@ while ($result = mysqli_fetch_array($query))
 
 <h2>Наши проекты</h2>
 <?php
-$show_projects=mysqli_query($link, "SELECT * FROM Sites_for_checking");
-while ($show_projects_res = mysqli_fetch_array($show_projects)) 
-	{
-        echo '<div class="our_proj">'.$show_projects_res['Site'].'</div>';
+$current_date=date("F d, Y, h:i a");
+$alarm_class='';
+$arr_projects=OurProjects::GetListProjects($link);
+foreach($arr_projects as $arr_project)
+{
+    if(CheckProjects::dif_date_in_days(CheckProjects::show_date_ending_ssl($arr_project), $current_date)<14)
+    {
+        $alarm_class='alarm';
     }
+    else
+    {
+        $alarm_class='';
+    }
+    echo '<div class="our_proj">'.'<a href="'.$arr_project.'" target="_blank">'.$arr_project.'</a> <span class="'.$alarm_class.'">До окончания ssl сертификата '.CheckProjects::declOfNum(CheckProjects::dif_date_in_days(CheckProjects::show_date_ending_ssl($arr_project), $current_date), ['день', 'дня', 'дней']).'</span></div>';
+}
 ?>
 
 <br>
@@ -70,7 +80,6 @@ while ($show_projects_res = mysqli_fetch_array($show_projects))
 
 
 <?php
-        //script for entrance end
         }
   
     }
@@ -78,6 +87,7 @@ while ($show_projects_res = mysqli_fetch_array($show_projects))
     {
         echo 'Неверный пароль. <a href="/">Вернуться на Главную</a>';
     }
+//script for entrance end
 ?>
 
 </div>

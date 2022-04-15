@@ -1,7 +1,7 @@
 <?php
-
+require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/classes.php');
 //подключаемся к базе
-require_once($_SERVER['DOCUMENT_ROOT'].'/system_files/connect_db.php');
+$link=Connect_DB::connect_to_db();
 
 if(mysqli_query($link, "CREATE TABLE LoginPassword (login varchar(50), PassWord varchar(50));"))
 {
