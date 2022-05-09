@@ -71,6 +71,10 @@
             border: 1px solid black;
             padding: 10px;
         }
+        .table_pr .row_color
+        {
+            background: #01ff1561;
+        }
     </style>
 
     <div class="main_tabs_div">
@@ -93,6 +97,14 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>
+                                <p>Демонтаж перегородок из бетона</p>
+                            </td>
+                            <td>
+                                <p>от 1 600 руб.</p>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <p>Демонтаж перегородок из бетона</p>
@@ -189,6 +201,13 @@
                 var num_active = $('.tabs_head').find('.active').index();
                 $('.tabs_divs .tab_custom_content').removeClass('active');
                 $('.tabs_divs .tab_custom_content').eq(num_active).addClass('active');
+            });
+            $('.table_pr tr').each(function(index, el)
+            {
+                if(index%2==0)
+                {
+                    $(this).addClass('row_color');
+                }
             });
         });
     </script>
