@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+.list_projects {
+    max-width: 560px;
+    width: 100%;
+    min-height: 550px;
+    margin: 0 auto;
+    background: #817c7c;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.list_projects .site {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.all_ok {
+    color: #2aff62 !important;
+}
+
+.btn_check_varara {
+    background: #2aff62;
+    color: white;
+    max-width: 350px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.list_projects img {
+    margin: 0 auto;
+    margin-top: 15px;
+}
